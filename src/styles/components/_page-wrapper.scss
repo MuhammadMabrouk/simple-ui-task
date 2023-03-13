@@ -1,0 +1,7 @@
+/* Page Wrapper Styles */
+/*---------------------*/
+.page-wrapper {
+  @include appDir() {
+    padding-#{dirs(left, right)}: var(--sidebar-width);
+  }
+}

@@ -1,0 +1,89 @@
+/* Side Menu Styles */
+/*------------------*/
+.sideMenu {
+  --padding-size: 1rem 2rem;
+
+  &__title {
+    padding: var(--padding-size);
+    margin: 1rem 0;
+
+    @media #{$max_767} {
+      display: none;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    @include flexbox(flex, "", center, "", "", "");
+    gap: 1.25rem;
+    color: hsl(var(--t-color-two));
+    padding: var(--padding-size);
+    border-radius: 0.25rem;
+
+    @media #{$max_767} {
+      justify-content: center;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__icon,
+    &__text {
+      display: block;
+      transition: inherit;
+    }
+
+    &__icon {
+      width: 1.5rem;
+      text-align: center;
+      font-size: 1.25rem;
+    }
+
+    &__text {
+      font-size: 1.125rem;
+      font-weight: bold;
+
+      @media #{$max_767} {
+        display: none;
+      }
+    }
+
+    &.modeSwitcherBtn {
+      [data-mode="light"] & {
+        .icon-light {
+          display: none;
+        }
+      }
+
+      [data-mode="dark"] & {
+        .icon-dark {
+          display: none;
+        }
+      }
+    }
+
+    &:hover,
+    &.active {
+      box-shadow: 0 0.25rem 1rem hsl(var(--t-color-one), 0.06);
+
+      .sideMenu__link__icon {
+        color: hsl(var(--main-color-one));
+      }
+
+      .sideMenu__link__text {
+        color: hsl(var(--t-color-one));
+      }
+    }
+
+    &:focus {
+      @include focusStyle();
+    }
+  }
+}

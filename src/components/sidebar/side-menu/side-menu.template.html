@@ -1,0 +1,72 @@
+<nav class="sideMenu">
+
+  <!-- menu title -->
+  <h3 class="sideMenu__title">${{ index.components.sideMenu.title }}$</h3>
+
+  <!-- navigation list -->
+  <ul class="sideMenu__list">
+    <li class="sideMenu__item">
+      <a class="sideMenu__link active" href="#">
+        <span class="sideMenu__link__icon">
+          <i class="fa-solid fa-house"></i>
+        </span>
+        <span class="sideMenu__link__text">${{ index.components.sideMenu.i1 }}$</span>
+      </a>
+    </li>
+    <li class="sideMenu__item">
+      <a class="sideMenu__link" href="#">
+        <span class="sideMenu__link__icon">
+          <i class="fa-solid fa-comment-dots"></i>
+        </span>
+        <span class="sideMenu__link__text">${{ index.components.sideMenu.i2 }}$</span>
+      </a>
+    </li>
+    <li class="sideMenu__item">
+      <a class="sideMenu__link" href="#">
+        <span class="sideMenu__link__icon">
+          <i class="fa-solid fa-user"></i>
+        </span>
+        <span class="sideMenu__link__text">${{ index.components.sideMenu.i3 }}$</span>
+      </a>
+    </li>
+    <li class="sideMenu__item">
+      <a class="sideMenu__link" href="#">
+        <span class="sideMenu__link__icon">
+          <i class="fa-solid fa-bookmark"></i>
+        </span>
+        <span class="sideMenu__link__text">${{ index.components.sideMenu.i4 }}$</span>
+      </a>
+    </li>
+    <li class="sideMenu__item">
+      <a class="sideMenu__link" href="#">
+        <span class="sideMenu__link__icon">
+          <i class="fa-solid fa-gear"></i>
+        </span>
+        <span class="sideMenu__link__text">${{ index.components.sideMenu.i5 }}$</span>
+      </a>
+    </li>
+
+    <!-- mode switcher button -->
+    <li class="sideMenu__item">
+      <a class="sideMenu__link modeSwitcherBtn" href="#" onclick="window._toggleAppMode(event)">
+        <span class="sideMenu__link__icon icon-light">
+          <i class="fa-solid fa-sun"></i>
+        </span>
+        <span class="sideMenu__link__icon icon-dark">
+          <i class="fa-solid fa-moon"></i>
+        </span>
+        <span class="sideMenu__link__text">${{ index.components.modeSwitcher }}$</span>
+      </a>
+    </li>
+
+    <!-- language switcher button -->
+    <li class="sideMenu__item">
+      <a class="sideMenu__link" href="${{ index.i18n.otherLang.prefix }}$index.html">
+        <span class="sideMenu__link__icon">
+          <i class="fa-solid fa-earth-americas"></i>
+        </span>
+        <span class="sideMenu__link__text">${{ index.i18n.otherLang.full }}$</span>
+      </a>
+    </li>
+  </ul>
+</nav>

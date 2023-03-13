@@ -1,0 +1,43 @@
+<li class="feeds__item">
+
+  <!-- feed image -->
+  <a class="feeds__item__imgBox" href="#">
+    <img class="feeds__item__img" src="@@feedImgPath" alt="@@feedImgAlt">
+  </a>
+
+  <!-- feed footer -->
+  <div class="feeds__item__footer">
+
+    <!-- feed user -->
+    <a class="feeds__item__user" href="#">
+
+      <!-- user avatar -->
+      <div class="feeds__item__user__avatarBox">
+        <img class="feeds__item__user__avatar" src="@@userAvatarPath" alt="@@userAvatarAlt">
+      </div>
+
+      <!-- user name -->
+      <h4 class="feeds__item__user__username">@@username</h4>
+    </a>
+
+    <!-- feed statistics -->
+    <ul class="feeds__item__stats">
+
+      <!-- feed likes -->
+      <li class="feeds__item__stats__item @@isHot">
+        <span class="feeds__item__stats__icon">
+          <i class="fa-solid fa-heart"></i>
+        </span>
+        <span>@@likes</span>
+      </li>
+
+      <!-- feed comments -->
+      <li class="feeds__item__stats__item">
+        <span class="feeds__item__stats__icon">
+          <i class="fa-solid fa-comment-dots"></i>
+        </span>
+        <span>@@comments</span>
+      </li>
+    </ul>
+  </div>
+</li>

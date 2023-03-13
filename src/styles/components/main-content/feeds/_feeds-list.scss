@@ -1,0 +1,23 @@
+/* Feeds List Styles */
+/*-------------------*/
+.feeds {
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 2rem;
+
+    @media #{$min_1400} {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media #{$min_992} and #{$max_1399} {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media #{$max_991} {
+      grid-template-columns: 1fr;
+    }
+  }
+}

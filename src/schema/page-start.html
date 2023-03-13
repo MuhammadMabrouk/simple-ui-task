@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="${{ index.i18n.lang.code }}$" dir="${{ index.i18n.dir }}$" data-mode="light">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple UI Task">
+    <meta name="keywords" content="html, css, javascript, vanilla, responsive, sass">
+
+    <!-- title of the browser tab -->
+    <title>${{ index.browserTitle }}$</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="assets/favicon.ico" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="assets/favicon-dark-mode.ico" media="(prefers-color-scheme: dark)">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="${{ index.i18n.fonts }}$">
+
+    <!-- css libraries file -->
+    <link rel="stylesheet" href="styles/libraries.min.css">
+
+    <!-- main style file -->
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body id="app">
+    <div id="app-inner">

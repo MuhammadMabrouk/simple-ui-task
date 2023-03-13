@@ -1,0 +1,30 @@
+/* Brand Logo */
+/*------------*/
+.brandLogo {
+  width: fit-content;
+  padding-bottom: 1rem;
+  margin: 0;
+
+  &__link {
+    @include flexbox(flex, "", center, "", "", "");
+    gap: 1.25rem;
+
+    &:focus {
+      @include focusStyle();
+    }
+  }
+
+  &__icon {
+    --shadow: 0.75rem 2rem hsl(var(--main-color-one), 0.2);
+    border-radius: 50%;
+
+    @include appDir() {
+      box-shadow: dirs(-0.75rem var(--shadow), 0.75rem var(--shadow));
+    }
+  }
+
+  &__title {
+    color: hsl(var(--main-color-one));
+    font-size: 1.75rem;
+  }
+}

@@ -1,0 +1,45 @@
+/* Feeds Filter Styles */
+/*---------------------*/
+.feeds {
+  &__filter {
+    @include flexbox(flex, "", center, between, "", "");
+    gap: 1.5rem;
+
+    @media #{$max_767} {
+      flex-direction: column;
+    }
+
+    &__title {
+      margin: 0;
+    }
+
+    &__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      @include flexbox(flex, "", center, "", "", "");
+      gap: 1.5rem;
+
+      @media #{$max_767} {
+        flex-wrap: wrap;
+      }
+    }
+
+    &__item {
+    }
+
+    &__btn {
+      color: hsl(var(--t-color-two));
+      font-weight: bold;
+
+      &:hover,
+      &.active {
+        color: hsl(var(--main-color-one));
+      }
+
+      &:focus {
+        @include focusStyle();
+      }
+    }
+  }
+}

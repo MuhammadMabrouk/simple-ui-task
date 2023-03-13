@@ -1,0 +1,103 @@
+/* Feeds Item Styles */
+/*-------------------*/
+.feeds {
+  &__item {
+    &__imgBox {
+      --shadow: 0.75rem 1rem hsl(var(--main-color-one), 0.05);
+      display: block;
+      background-color: hsl(var(--bg-color-one));
+      padding: 0.25rem;
+      border-radius: var(--radius-size);
+
+      // for changing the active mode
+      transition: background-color var(--global-transition),
+        box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+      @include appDir() {
+        box-shadow: dirs(-0.75rem var(--shadow), 0.75rem var(--shadow));
+      }
+
+      &:hover,
+      &:hover + .feeds__item__footer {
+        transform: translateY(-0.5rem);
+      }
+
+      &:focus {
+        @include focusStyle();
+      }
+    }
+
+    &__img {
+      display: block;
+      width: 100%;
+      border-radius: var(--radius-size);
+    }
+
+    &__footer {
+      @include flexbox(flex, "", center, between, "", "");
+      gap: 1rem;
+      margin-top: 1.5rem;
+      transition: transform 0.3s ease-in-out;
+
+      @media #{$max_576} {
+        flex-direction: column;
+      }
+    }
+
+    &__user {
+      @include flexbox(flex, "", center, "", "", "");
+      gap: 1rem;
+
+      &__avatarBox {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+
+      &__avatar {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: inherit;
+      }
+
+      &__username {
+        margin: 0;
+        transition: inherit;
+      }
+
+      &:hover {
+        .feeds__item__user__username {
+          color: hsl(var(--main-color-one));
+        }
+      }
+
+      &:focus {
+        @include focusStyle();
+      }
+    }
+
+    &__stats {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      @include flexbox(flex, "", center, "", "", "");
+      gap: 1rem;
+
+      &__item {
+        @include flexbox(flex, "", center, "", "", "");
+        gap: 0.5rem;
+
+        &.is-hot {
+          color: #ff5775;
+        }
+      }
+
+      &__icon {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+/*------------------------------------------------------------------------------------------*/
+/* 4. Components Styles */
+/*------------------------------------------------------------------------------------------*/
+
+// Import components files
+@import "page-wrapper";
+
+@import "sidebar/sidebar";
+@import "sidebar/brand-logo";
+@import "sidebar/side-menu";
+
+@import "main-content/main-content";
+@import "main-content/feeds/feeds";
+@import "main-content/feeds/feeds-filter";
+@import "main-content/feeds/feeds-list";
+@import "main-content/feeds/feeds-item";
+
+@import "custom-scrollbar";

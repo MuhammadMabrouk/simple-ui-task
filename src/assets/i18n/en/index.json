@@ -1,0 +1,53 @@
+{
+  "prefix": "",
+  "languages": "Languages",
+  "i18n": {
+    "lang": {
+      "code": "en",
+      "short": "EN",
+      "medium": "ENG",
+      "full": "English"
+    },
+    "dir": "ltr",
+    "startDir": "left",
+    "endDir": "right",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap",
+    "otherLang": {
+      "prefix": "ar-",
+      "code": "ar",
+      "short": "ع",
+      "medium": "عربي",
+      "full": "العربية"
+    }
+  },
+
+  "browserTitle": "Simple UI Task",
+
+  "components": {
+    "brandLogo": "Cofeed",
+    "modeSwitcher": "Light/Dark",
+    "sideMenu": {
+      "title": "Menu",
+      "i1": "Home",
+      "i2": "Messages",
+      "i3": "Profile",
+      "i4": "Saved Post",
+      "i5": "Settings"
+    },
+    "feeds": {
+      "title": "Feeds",
+      "filter": {
+        "i1": "All",
+        "i2": "Following",
+        "i3": "Newest",
+        "i4": "Popular"
+      },
+      "users": {
+        "i1": "Dean Winchester",
+        "i2": "Jesse Pinkman",
+        "i3": "Theodore Bagwell",
+        "i4": "Walter White"
+      }
+    }
+  }
+}

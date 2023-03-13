@@ -1,0 +1,53 @@
+{
+  "prefix": "ar-",
+  "languages": "اللغات",
+  "i18n": {
+    "lang": {
+      "code": "ar",
+      "short": "ع",
+      "medium": "عربي",
+      "full": "العربية"
+    },
+    "dir": "rtl",
+    "startDir": "right",
+    "endDir": "left",
+    "fonts": "https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap",
+    "otherLang": {
+      "prefix": "",
+      "code": "en",
+      "short": "EN",
+      "medium": "ENG",
+      "full": "English"
+    }
+  },
+
+  "browserTitle": "مهمة واجهة مستخدم بسيطة",
+
+  "components": {
+    "brandLogo": "كو فييد",
+    "modeSwitcher": "فاتح/داكن",
+    "sideMenu": {
+      "title": "القائمة",
+      "i1": "الرئيسية",
+      "i2": "الرسائل",
+      "i3": "الملف الشخصي",
+      "i4": "المنشورات المحفوظة",
+      "i5": "الإعدادات"
+    },
+    "feeds": {
+      "title": "المنشورات",
+      "filter": {
+        "i1": "الكل",
+        "i2": "متابعاتي",
+        "i3": "الأحدث",
+        "i4": "شائع"
+      },
+      "users": {
+        "i1": "أحمد علي",
+        "i2": "يوسف محمد",
+        "i3": "محمد عبدالله",
+        "i4": "علي عبدالرحمن"
+      }
+    }
+  }
+}

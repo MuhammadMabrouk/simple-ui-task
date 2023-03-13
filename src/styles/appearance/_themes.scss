@@ -1,0 +1,64 @@
+/*-----------------------------------------------------------------------------------------*/
+/* 1. Color Codes */
+/*-----------------------------------------------------------------------------------------*/
+
+:root {
+  /* primary color */
+  --primary-h: 263;
+  --primary-s: 100%;
+  --primary-l: 73%;
+  --primary-color: var(--primary-h), var(--primary-s), var(--primary-l);
+
+  /* secondary color */
+  --secondary-h: 142;
+  --secondary-s: 72%;
+  --secondary-l: 76%;
+  --secondary-color: var(--secondary-h), var(--secondary-s), var(--secondary-l);
+
+  /* light color */
+  --light-h: 225;
+  --light-s: 0%;
+  --light-l: 100%;
+  --light-color: var(--light-h), var(--light-s), var(--light-l);
+
+  /* dark color */
+  --dark-h: 223;
+  --dark-s: 49%;
+  --dark-l: 10%;
+  --dark-color: var(--dark-h), var(--dark-s), var(--dark-l);
+}
+
+// mode definitions
+[data-mode="light"] {
+  --main-color-one: var(--primary-color);
+  --main-color-two: var(--secondary-color);
+
+  --bg-color-one: var(--light-color);
+  --bg-color-two: var(--light-h), calc(var(--light-s) + 86%), calc(var(--light-l) - 3%);
+  --bg-color-reverse: var(--dark-color);
+
+  --t-color-one: var(--dark-color);
+  --t-color-two: var(--dark-h), var(--dark-s), calc(var(--dark-l) + 60%);
+
+  --border-color: var(--light-h), calc(var(--light-s) + 50%), calc(var(--light-l) - 10%);
+
+  --card-shadow: 0 0 30px hsla(0, 0%, 0%, 0.2);
+  --drop-shadow: drop-shadow(2px 4px 8px hsla(0, 0%, 0%, 0.1));
+}
+
+[data-mode="dark"] {
+  --main-color-one: var(--primary-color);
+  --main-color-two: var(--secondary-color);
+
+  --bg-color-one: var(--dark-color);
+  --bg-color-two: var(--dark-h), var(--dark-s), calc(var(--dark-l) + 7%);
+  --bg-color-reverse: var(--light-color);
+
+  --t-color-one: var(--light-color);
+  --t-color-two: var(--light-h), var(--light-s), calc(var(--light-l) - 30%);
+
+  --border-color: var(--dark-h), calc(var(--dark-s) + 50%), calc(var(--dark-l) - 10%);
+
+  --card-shadow: 0 0 30px hsla(0, 0%, 0%, 0.2);
+  --drop-shadow: drop-shadow(2px 4px 8px hsla(0, 0%, 0%, 0.1));
+}

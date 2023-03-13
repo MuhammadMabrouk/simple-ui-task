@@ -1,0 +1,36 @@
+/* Sidebar Styles */
+/*----------------*/
+.sidebar {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  height: 100%;
+  width: var(--sidebar-width);
+  background-color: hsl(var(--bg-color-one));
+  overflow-y: auto;
+
+  // for changing the active mode
+  transition: background-color var(--global-transition);
+
+  @include appDir() {
+    #{dirs(left, right)}: 0;
+  }
+
+  @media #{$min_768} {
+    padding: 2.5rem 0.5rem;
+  }
+
+  @media #{$max_767} {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .brandLogo {
+    margin: auto;
+
+    &__title {
+      @media #{$max_767} {
+        display: none;
+      }
+    }
+  }
+}
